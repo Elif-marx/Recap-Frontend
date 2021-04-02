@@ -1,0 +1,9 @@
+
+<div *ngIf="dataLoaded==false" class="d-flex justify-content-center">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+<ul class="list-group">
+    <li *ngFor="let brand of brands" class="list-group-item">{{brand.brandName}}</li>
+</ul>
